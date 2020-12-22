@@ -1,0 +1,260 @@
+* {
+    border: none !important;
+}
+
+
+
+body {
+    background-color: #FFFFFF;
+    padding: 0px;
+    margin: 0px;
+    /* border: green 1px dashed; */
+}
+
+#illustration-container {
+    background-image: linear-gradient(to bottom right, #160054, #13002B);
+    height: 100%;
+    width: 100%;
+}
+
+#site-title {
+    transform: rotateY(-30deg);
+    display: flex;
+    justify-content: center;
+    border: 2px red dashed;
+}
+
+#merry-christmas {
+    color: #FFFFFF;
+    position: absolute;
+    font-family: liebegerda, sans-serif;
+    font-weight: 700;
+    font-size: 8rem;
+    line-height: 8rem;
+    text-align: center;
+    transform: skew( 0deg, -10deg);
+    border: 1px orange dashed;
+
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffe561, 0 0 40px #e60073, 0 0 50px #ffe561, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ffe561, 0 0 60px #ff4da6, 0 0 70px #ffe561, 0 0 80px #ff4da6;
+    }
+  }
+
+#second-line {
+    font-size: 9rem;
+}
+
+.illustration-item {
+    position: absolute;
+    width: 400px;
+    border: 1px red dashed;
+}
+
+#snow {
+    width: 100vw;
+    position: absolute;
+    z-index: 0;
+    bottom: 0px;
+}
+
+#house {
+    left: 50%;
+    top: 50%;
+}
+
+#snowman {
+    width: 200px;
+    left: 45%;
+    top: 70%;
+}
+
+#tree {
+    width: 350px;
+    left: 62%;
+    top: 55%;
+}
+
+
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+
+  .snowflake {
+    position: fixed;
+    background-color: #CCC;
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.illustration-present {
+    position: absolute;
+    cursor: pointer;
+}
+
+#snow-cover-1, #snow-cover-2, #snow-cover-3 {
+    position: absolute;
+    z-index: 0;
+    width: 5vw;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3 ease-in-out;
+}
+
+#snow-cover-1.fade, #snow-cover-2.fade, #snow-cover-3.fade {
+    opacity: 0;
+}
+
+.hover-effect {
+    transform: scale(1.2, 1.2);
+}
+
+#present-group-1 {
+    display: flex;
+    bottom: 5vh;
+    right: 15vw;
+    position: absolute;
+    border: 1px green dashed;
+}
+
+#present-1 {
+    width: 5vw;
+}
+
+#present-group-2 {
+    display: flex;
+    bottom: 4vh;
+    right: 55vw;
+    position: absolute;
+    border: 1px green dashed;
+}
+
+#present-2 {
+    width: 5vw;
+}
+
+#present-group-3 {
+    display: flex;
+    bottom: 3vh;
+    right: 35vw;
+    position: absolute;
+    border: 1px green dashed;
+}
+
+#present-3 {
+    width: 5vw;
+}
+
+/*  */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 80%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: auto;
+    border: 3px green dashed;
+  }
+  
+  .popup h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    color: #333;
+    font-family: degular, sans-serif;
+  }
+
+  .popup * {
+    font-family: degular, sans-serif;
+  }
+
+  .popup h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 8px 0px 4px;
+  }
+
+  .popup p {
+    font-weight: 200;
+    margin: 0px 0px 24px;
+    max-width: 275px;
+  }
+
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    /* max-height: 30%; */
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
+
+  /* */
+
+  .company-image {
+      width: 275px;
+      height: 275px;
+      border-radius: 3.5%;
+      object-fit: cover;
+  }
