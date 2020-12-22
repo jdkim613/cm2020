@@ -83,6 +83,18 @@ body {
     top: 55%;
 }
 
+#reindeer {
+  bottom: 5vh;
+  left: 10vw;
+  transform: rotateZ(-3deg);
+}
+
+#moon {
+  width: 10vw;
+  top: 8vh;
+  left: 10vw;
+}
+
 
 #snowflakeContainer {
     position: absolute;
