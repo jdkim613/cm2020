@@ -198,3 +198,12 @@ $('#present-group-3').mouseover(function() {
   $('#present-3').removeClass('hover-effect');
 })
 
+$('#card-group').mouseover(function() {
+  $('#snow-cover-4').addClass('fade');
+  $('#card-image').addClass('hover-effect');
+  console.log('test toggle 3')
+}).mouseleave(function() {
+  $('#snow-cover-4').removeClass('fade');
+  $('#card-image').removeClass('hover-effect');
+})
+

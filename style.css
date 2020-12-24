@@ -119,7 +119,7 @@ body {
     cursor: pointer;
 }
 
-#snow-cover-1, #snow-cover-2, #snow-cover-3 {
+#snow-cover-1, #snow-cover-2, #snow-cover-3, #snow-cover-3, #snow-cover-4 {
     position: absolute;
     z-index: 0;
     width: 5vw;
@@ -130,7 +130,7 @@ body {
     transition: opacity 0.3 ease-in-out;
 }
 
-#snow-cover-1.fade, #snow-cover-2.fade, #snow-cover-3.fade {
+#snow-cover-1.fade, #snow-cover-2.fade, #snow-cover-3.fade, #snow-cover-4.fade {
     opacity: 0;
 }
 
@@ -172,6 +172,22 @@ body {
 
 #present-3 {
     width: 5vw;
+}
+
+#card-group {
+  display: flex;
+  bottom: 7vh;
+  right: 25vw;
+  position: absolute;
+  border: 1px green dashed;
+}
+
+#card-image{
+  width: 5vw;
+}
+
+#card {
+  max-width: 500px;
 }
 
 /*  */
@@ -235,6 +251,10 @@ body {
     max-width: 275px;
   }
 
+  #delivery-date {
+    max-width: 1000px;
+  }
+
   .popup .close {
     position: absolute;
     top: 20px;
@@ -251,6 +271,15 @@ body {
   .popup .content {
     /* max-height: 30%; */
     overflow: auto;
+  }
+
+  .shoes {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #shoes {
+    height: 44vh;
   }
   
   @media screen and (max-width: 700px){
@@ -269,4 +298,19 @@ body {
       height: 275px;
       border-radius: 3.5%;
       object-fit: cover;
+  }
+
+  .faces {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 25vh;
+  }
+
+  #leah {
+    right: 15vw;
+  }
+
+  #john {
+    right: 25vw;
   }
